@@ -189,8 +189,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        farhenheitResult = farhenheit + " F";
-        kelvinResult = kelvin + " K";
+        farhenheitResult = String.format("%.2f", farhenheit)  + " F";
+        kelvinResult = String.format("%.2f", kelvin) + " K";
 
         Spannable farhenheitSpannable = new SpannableString(farhenheitResult);
         Spannable kelvinSpannable = new SpannableString(kelvinResult);
@@ -223,9 +223,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        gramResult = gram + " Grams";
-        ounceResult = ounce + " Ounces";
-        poundResult = pound + " Pounds";
+        gramResult = String.format("%.2f", gram) + " Grams";
+        ounceResult = String.format("%.2f", ounce) + " Ounces";
+        poundResult = String.format("%.2f", pound) + " Pounds";
 
         Spannable gSpannable = new SpannableString(gramResult);
         Spannable oSpannable = new SpannableString(ounceResult);
@@ -259,9 +259,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        cmResult = cm + " cm";
-        inchResult = inch + " inches";
-        ftResult = ft + " ft";
+        cmResult = String.format("%.2f", cm) + " cm";
+        inchResult = String.format("%.2f", inch) + " inches";
+        ftResult = String.format("%.2f", ft) + " ft";
 
         Spannable cmSpannable = new SpannableString(cmResult);
         Spannable inchSpannable = new SpannableString(inchResult);
